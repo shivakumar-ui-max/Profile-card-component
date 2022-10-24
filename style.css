@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+              --bg: hsl(185, 75%, 39%);
+              --h: hsl(229, 23%, 23%);
+              --v: hsl(227, 10%, 46%);
+
+              --p: hsl(0, 0%, 59%);
+}
+*
+{
+              font-family: 'Kumbh Sans', sans-serif;
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+}
+html{
+              font-size: 10px;
+              /* background-color: var(--bg); */
+}
+body{
+
+              min-height: 100vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: var(--bg);
+              margin: 1.25rem;
+              position: relative;
+              z-index: -3;
+              overflow: hidden;
+
+
+}
+
+.circle1{
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: -2;
+              transform: translate(-15rem,-30rem);
+}
+.circle2{
+              position: absolute;
+              right: 0;
+              bottom: 0;
+              transform: translate(15rem,30rem);
+}
+.container{
+              background-color: #fff;
+              max-width: 31.25rem;
+              border-radius: 1.25rem;
+              overflow: hidden;
+              position: relative;
+              box-shadow: 0px 2px 2px 5px rgba(255,255,255,0.1);
+              z-index: 1;
+              transition: 1s ease;
+              cursor: pointer;
+
+}
+
+
+.container .top{
+              width: 100%;
+              height: 50%;
+
+
+}
+.container .center{
+              position: absolute;
+              top: 10rem;
+              left:10rem;
+              width: 10rem;
+              height:10rem;
+
+
+}
+.center img{
+              border-radius: 50%;
+              height:100%;
+              width:100%;
+              object-fit: cover;
+              border: 0.5rem solid #fff;
+
+
+}
+.container .bottom
+{
+              position: relative;
+              top: 7rem;
+              left: 0;
+              padding: 0 3rem;
+
+}
+.bottom .content{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+
+}
+.bottom h1{
+              color: var(--h);
+              font-size: 1.8rem;
+}
+.bottom .content span{
+              font-size: 1.7rem;
+              margin-left: 1.2rem;
+              color: var(--p);
+
+}
+.bottom p{
+              display: block;
+              margin-left:10rem ;
+              margin-top: 1.4rem;
+              font-size: 1.3rem;
+              color: var(--v);
+}
+.bottom .line{
+
+              position: absolute;
+              top: 8rem;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: var(--p);
+              opacity: 0.4;
+}
+.fotter{
+              margin: 5rem 0;
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+
+}
+ul{
+              list-style: none;
+              margin-bottom: 2rem;
+              padding-bottom: 2rem;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+}
+ul li h2{
+              font-size: 1.8rem;
+              color: var(--h);
+}
+ul li {
+              color:var(--v);
+              margin: 0.1rem 0;
+              letter-spacing: 0.1rem;
+}
+/* ------hover effect----- */
+.container:hover{
+              scale:1.1;
+             
+}
+
+/* ----------media querrie----- */
+@media (max-width:600px){
+
+body{
+
+              position: relative;
+              z-index: -3;
+              overflow: hidden;
+
+
+
+
+}
+
+.circle1{
+              position: absolute;
+              top: 0%;
+              left: -6rem;
+              z-index: -2;
+              height: 100%;
+              width: 100%;
+
+
+
+
+}
+
+.circle2{
+              position: absolute;
+              top:0;
+              right: -4rem;
+              width: 100%;
+              height: 100%;
+}
+}
